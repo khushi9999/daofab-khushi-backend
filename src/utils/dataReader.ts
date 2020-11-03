@@ -1,5 +1,10 @@
 import fs from "fs";
 
+/**
+ * Return all child (Paid) Transactions of the given parent transaction.
+ *
+ * @param parentId
+ */
 export const getChilds = parentId => {
   const rawChildData = fs.readFileSync("src/data/Child.json");
   // @ts-ignore
@@ -12,6 +17,9 @@ export const getChilds = parentId => {
   return [];
 };
 
+/**
+ * Return all parent transactions.
+ */
 export const getParents = () => {
   const rawParentData = fs.readFileSync("src/data/Parent.json");
   // @ts-ignore

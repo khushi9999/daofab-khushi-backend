@@ -1,6 +1,13 @@
 import { NextFunction, Request, Response } from "express";
 import { getChilds, getParents } from "../utils/dataReader";
 
+/**
+ * Controller to handle transactions related requests
+ *
+ * @param req
+ * @param res
+ * @param next
+ */
 export const getParentTransaction = async (
   req: Request,
   res: Response,

@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 /**
- *  Production is served unser /api
+ *  Production is served
  */
 if (process.env.NODE_ENV === "production") {
   console.info("[App][Bootstrap] App is running in production mode.");
